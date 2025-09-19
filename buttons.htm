@@ -1,0 +1,74 @@
+<button class="subscribe-button">SUBSCRIBE</button>
+<button class="join-button">JOIN my channel</button>
+<button class="tweet-button" onclick="document.location='default.asp'" >Tweet</button>
+
+<style>
+.subscribe-button{
+  background-color: rgb(204, 0, 0);
+  color: white;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 8px;
+  vertical-align: top;
+  transition: opacity 0.15s;
+}
+
+.subscribe-button:hover{
+ opacity: 0.8;
+}
+
+.subscribe-button:active{
+opacity: 0.5;
+}
+
+.join-button{
+  background-color: white;
+  color: rgb(6, 95, 212);
+  font-family: Arial;
+  border: solid;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-width: 1px;
+  border-radius: 2px;
+  border-color: rgb(6, 95, 212);
+  cursor: pointer;
+  transition: background-color 1s, color 1s ;
+
+}
+
+.join-button:hover{
+background-color: rgb(6, 95, 212);
+color: white;
+}
+
+.join-button:active{
+  opacity: 0.7;
+}
+.tweet-button{
+  background-color: rgb(29, 155, 240);
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  margin-left: 15px;
+  cursor: pointer;
+  vertical-align: top;
+  transition: box-shadow 0.15s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+ 
+.tweet-button:hover{
+box-shadow: 10px 10px 10px rgba(29, 155, 240, 0.15);
+}
+
+</style>

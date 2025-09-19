@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display property exercise</title>
+  <style>
+    .namebar, .emailbar{
+      display: block;
+      margin: 5px;
+    }
+    .para-survey{
+      width: 200px;
+      display: inline-block;
+      margin-top: 20px;
+      vertical-align: middle;
+    }
+    .yes-survey, .no-survey{
+      width: 50px;
+      vertical-align: middle;
+    }
+
+    .google-main{
+      text-align: center;
+      border: solid;
+      border-color: black;
+    }
+    .google-logo{
+      width: 100px;
+    }
+    .search-bar{
+      width: 400px;
+      border: none;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px black;
+    }
+    .google-buttons{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .first-name-bar, .last-name-bar{
+      display: inline-block;
+      width: 194px;
+      height: 20px;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+    .email-bar{
+      display: block;
+      width: 400px;
+      height: 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .sign-up-button{
+      width: 408px;
+      height: 25px;
+      background-color: rgb(30, 106, 206);
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .para-uber{
+      font-size: 25px;
+      font-weight: bold;
+      font-family: arial;
+    }
+    .pick-up-bar, .destination-bar{
+      display: block;
+      width: 300px;
+      height: 30px;
+      border: none;
+      background-color: lightgray;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .request-button{
+      background-color: black;
+      color: white;
+      height: 30px;
+    }
+    .schedule-button{
+      background-color: lightgray;
+      color: black;
+      border: none;
+      height: 30px;
+      margin-left: 10px;
+    }
+    .uber{
+      border: solid;
+      margin: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="first">
+    <input class="namebar" type="text" placeholder="Name">
+    <input class="emailbar" type="text" placeholder="Email">
+  </div>
+
+  <div class="two">
+    <p class="para-survey" >
+      Thanks for chatting with our customer support. Would you like to take our quick survey?
+    </p>
+    <button class="yes-survey"> Yes</button>
+    <button class="no-survey">No</button>
+  </div>
+  <div class="google-main">
+    <img class="google-logo" src="images/Google_2015_logo.png">
+    <br> <input class="search-bar" type="text" placeholder="Search Google or type URL">
+      <div class="google-buttons">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+      </div>
+  </div>
+
+  <div class="sign-up-form">
+    <input class="first-name-bar" type="text" placeholder="First name">
+    <input class="last-name-bar" type="text" placeholder="Last name">
+    <input class="email-bar"  type="text" placeholder="Email">
+    <button class="sign-up-button">Sign Up</button>
+  </div>
+  <div class="uber">
+    <p class="para-uber">Request a ride now</p>
+    <input class="pick-up-bar" type="text" placeholder="Enter pick up location">
+    <input class="destination-bar" type="text" placeholder="Enter destinatin">
+    <button class="request-button">Request now</button>
+    <button class="schedule-button">Schedule for later</button>
+  </div>
+</body>
+</html>
