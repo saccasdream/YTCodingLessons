@@ -1,0 +1,51 @@
+.search-bar{
+  display: block;
+}
+.p{
+  font-family: 'Roboto', sans-serif;
+}
+
+.thumbnail-container{
+  display: inline-block;
+  vertical-align: top;
+}
+.thumbnail{
+  width: 300px;
+  display: block;
+}
+
+.video-preview{
+ width: 300px;
+ display: inline-block;
+ vertical-align: top;
+ margin-right: 15px;
+}
+
+.channel-picture{
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+}
+
+.profile-picture{
+  width: 40px;
+  border-radius: 50px;
+}
+
+.video-info{
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  margin-left: 10px;
+}
+
+.video-author{
+  display: inline-block;
+}
+
+.video-stats{
+  display: inline-block;
+}
+.div{
+  display: block;
+}
