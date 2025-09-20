@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .friend-card{
+      display: inline-block;
+      width: 250px;
+      height: 400px;
+      border: solid 1px rgb(220, 220, 220);
+      box-shadow: 2px 2px 2px 2px rgb(220, 220, 220);
+      border-radius: 5px;
+      margin-left: 15px;
+      margin-bottom: 15px;
+    }
+    .thumbnail-container{
+      width: 250px;
+      height: 250px;
+      margin-bottom: 10px;
+    }
+    .thumbnail{
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    p{
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    .profile-name{
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .mutual-freinds-section{
+    align-items: center;
+    }
+    .profile-picture-container{
+      display: inline-block;
+      width: 40px;
+    }
+    .mutual-freinds-container{
+      display: inline-block;
+      width: 190px;
+      margin-bottom: 15px;
+    }
+    .profile-picture{
+      width: 100%;
+      height: 40px;
+      border-radius: 50%;
+      vertical-align: middle;
+      object-fit: cover;
+    }
+    .mutual-freinds{
+      font-size: 18px;
+      color: gray;
+      vertical-align: middle;
+    }
+    .add-button{
+      width: 60%;
+      height: 40px;
+      background-color: rgb(15, 155, 211);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="friend-card">
+    <div class="thumbnail-container">
+      <img class="thumbnail" src="images/Bulldog.jpeg" alt="thumbnail">
+    </div>
+    <div>
+      <p class="profile-name">Oliver</p>
+    </div>
+    <div class="mutual-freinds-section">
+      <div class="profile-picture-container">
+        <img class="profile-picture" src="images/profilepic1.jpeg" alt="profile-picture">
+      </div>
+      <div class="mutual-freinds-container">
+        <p class="mutual-freinds">2 Mutual Freinds</p>
+      </div>
+    </div>
+    <div>
+      <button class="add-button">Add Friend</button>
+    </div>
+  </div>
+
+  <div class="friend-card">
+    <div class="thumbnail-container">
+      <img class="thumbnail" src="images/picture1.jpeg" alt="thumbnail">
+    </div>
+    <div>
+      <p class="profile-name">Maxwell</p>
+    </div>
+    <div class="mutual-freinds-section">
+      <div class="profile-picture-container">
+        <img class="profile-picture" src="images/profilepic1.jpeg" alt="profile-picture">
+      </div>
+      <div class="mutual-freinds-container">
+        <p class="mutual-freinds">10 Mutual Freinds</p>
+      </div>
+    </div>
+    <div>
+      <button class="add-button">Add Friend</button>
+    </div>
+  </div>
+
+  <div class="friend-card">
+    <div class="thumbnail-container">
+      <img class="thumbnail" src="images/profilepic1.jpeg" alt="thumbnail">
+    </div>
+    <div>
+      <p class="profile-name">Oliver</p>
+    </div>
+    <div class="mutual-freinds-section">
+      <div class="profile-picture-container">
+        <img class="profile-picture" src="images/profilepic2.jpeg" alt="profile-picture">
+      </div>
+      <div class="mutual-freinds-container">
+        <p class="mutual-freinds">2 Mutual Freinds</p>
+      </div>
+    </div>
+    <div>
+      <button class="add-button">Add Friend</button>
+    </div>
+  </div>
+</body>
+</html>
