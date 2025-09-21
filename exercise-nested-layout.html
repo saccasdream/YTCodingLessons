@@ -40,17 +40,11 @@
       font-weight: bold;
       margin-left: 5px;
     }
-    .mutual-freinds-section{
-    align-items: center;
-    }
     .profile-picture-container{
-      display: inline-block;
       width: 40px;
     }
     .mutual-freinds-container{
-      display: inline-block;
       width: 190px;
-      margin-bottom: 15px;
     }
     .profile-picture{
       width: 100%;
@@ -77,37 +71,51 @@
       font-weight: bold;
       margin-left: 5px;
     }
+    .mutual-freinds-section{
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      column-gap: 20px;
+      vertical-align: middle;
+    }
+    .mutual-freinds-section-info{
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      align-items: center;
+      column-gap: 5px;
+      margin-bottom: 5px;
+    }
   </style>
 </head>
 <body>
-  <div class="friend-card">
-    <div class="thumbnail-container">
-      <img class="thumbnail" src="images/Bulldog.jpeg" alt="thumbnail">
-    </div>
-    <div>
-      <p class="profile-name">Oliver</p>
-    </div>
-    <div class="mutual-freinds-section">
-      <div class="profile-picture-container">
-        <img class="profile-picture" src="images/profilepic1.jpeg" alt="profile-picture">
+  <div class="mutual-freinds-section">
+    <div class="friend-card">
+      <div class="thumbnail-container">
+        <img class="thumbnail" src="images/Bulldog.jpeg" alt="thumbnail">
       </div>
-      <div class="mutual-freinds-container">
-        <p class="mutual-freinds">2 Mutual Freinds</p>
+      <div>
+        <p class="profile-name">Oliver</p>
+      </div>
+      <div class="mutual-freinds-section-info">
+        <div class="profile-picture-container">
+          <img class="profile-picture" src="images/profilepic1.jpeg" alt="profile-picture">
+        </div>
+        <div class="mutual-freinds-container">
+          <p class="mutual-freinds">2 Mutual Freinds</p>
+        </div>
+      </div>
+      <div>
+        <button class="add-button">Add Friend</button>
       </div>
     </div>
-    <div>
-      <button class="add-button">Add Friend</button>
-    </div>
-  </div>
 
-  <div class="friend-card">
+    <div class="friend-card">
     <div class="thumbnail-container">
       <img class="thumbnail" src="images/picture1.jpeg" alt="thumbnail">
     </div>
     <div>
       <p class="profile-name">Maxwell</p>
     </div>
-    <div class="mutual-freinds-section">
+    <div class="mutual-freinds-section-info">
       <div class="profile-picture-container">
         <img class="profile-picture" src="images/profilepic2.jpeg" alt="profile-picture">
       </div>
@@ -127,7 +135,7 @@
     <div>
       <p class="profile-name">Oliver</p>
     </div>
-    <div class="mutual-freinds-section">
+    <div class="mutual-freinds-section-info">
       <div class="profile-picture-container">
         <img class="profile-picture" src="images/profilepic3.jpeg" alt="profile-picture">
       </div>
@@ -139,5 +147,7 @@
       <button class="add-button">Add Friend</button>
     </div>
   </div>
+</div>
+  
 </body>
 </html>
