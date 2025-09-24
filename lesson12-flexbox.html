@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flexbox Lesson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
     .practice-container1{
       display: flex;
@@ -18,9 +21,13 @@
       width: 75px;
     }
 
-
+    .practice-container2{
+      display: flex;
+      border: solid 2px black;
+      margin-bottom: 10px;
+    }
     .item-1{
-      background-color: lightblue;
+      background-color: rgb(63, 136, 160);
       width: 50px;
     }
     .item-2{
@@ -33,9 +40,9 @@
     }
     .practice-container3{
       display: flex;
-    justify-content: space-between;
-    border: solid 2px black;
-    margin-bottom: 10px;
+      justify-content: space-between;
+      border: solid 2px black;
+      margin-bottom: 10px;
     }
 
     .items-1{
@@ -64,6 +71,129 @@
     .items-two{
       background-color: lightcoral;
     }
+
+    .challenge1-container{
+      box-shadow: 0px 0px 5px grey;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 50px;
+    }
+
+    .alert-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+    }
+    .alert{
+      font-family: Roboto, arial, sans-serif;
+      font-size: 25px;
+    }
+    .alert-count{
+     background-color: royalblue;
+     color: white;
+     font-family: Roboto, arial, sans-serif;
+     font-weight: bolder;
+     padding: 5px 15px;
+     border-radius: 20px;
+    }
+
+    .challenge2-container{
+      background-color: rgb(117, 5, 221);
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px;
+      margin-bottom: 50px;
+    }
+    .home-button{
+      color: white;
+      font-family: Roboto, arial, sans-serif;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    .search-bar{
+      width: 60%;
+      height: 30px;
+      border-radius: 15px;
+      border: none;
+      padding: 5px 15px;
+    }
+    .search-bar input{
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 15px;
+      font-family: Roboto, arial, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      padding-left: 15px;
+    }
+    .Download-button{
+      color: white;
+      font-family: Roboto, arial, sans-serif;
+      font-size: 20px;
+      font-weight: bolder;
+      border: solid 2px white;
+      padding: 5px 15px;
+    }
+
+
+
+
+    .profiles-section{
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+    }
+    .profile-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex: 1;
+      padding: 5px 10px;
+    }
+    .profile-picture-container{
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      object-position: center;
+    }
+    .profile-picture-container img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .profile-info-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex: 1;
+    }
+    .paragraph-container{
+      margin-left: 10px;
+      flex: 2;
+    }
+    .paragraph-container p{
+      margin: 2px 0px;
+      font-family: Roboto, arial, sans-serif;
+    }
+    .follow-button-container{
+      width : 100px;
+    }
+    .follow-button{
+      background-color: royalblue;
+      color: white;
+      font-family: Roboto, arial, sans-serif;
+      font-size: 15px;
+      font-weight: bolder;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
   </style>
 </head>
 <body>
@@ -72,7 +202,7 @@
     <div class="div-75px">75px</div>
   </div>
 
-  <div class="practice-container1">
+  <div class="practice-container2">
     <div class="item-1">item 1</div>
     <div class="item-2">item 2</div>
     <div class="item-3">item 3</div>
@@ -88,6 +218,83 @@
   <div class="practice-container4">
     <div class="items-one">item 1</div>
     <div class="items-two">item 2</div>
+  </div>
+
+  <h1>challenge exercise</h1>
+
+  <div class="challenge1-container">
+    <div class="alert-container">
+      <div class="alert">Home</div>
+      <div class="alert-count">14</div>
+    </div>
+    <div class="alert-container">
+      <div class="alert">Notifications</div>
+      <div class="alert-count">3</div>
+    </div>
+    <div class="alert-container">
+      <div class="alert">Messages</div>
+      <div class="alert-count">5</div>
+    </div>
+  </div>
+
+  <div class="challenge2-container">
+    <div class="home-button">Home</div>
+    <div class="search-bar"><input type="text" placeholder="Search"></div>
+    <div class="Download-button">Download</div>
+  </div>
+
+
+  <div class="profiles-section">
+    <div class="profile-container">
+      <div class="profile-info-container">
+        <div class="profile-picture-container">
+          <img class="profile-picture" src="images/cat.jpg" alt="">
+        </div>
+        <div class="paragraph-container">
+          <p class="profile-name"><strong>Oliver</strong></p>
+          <p class="profile-description">The Cat</p>
+          <p class="profile-popularity">Popular</p>
+        </div>
+      </div>
+      <div>
+        <div class="follow-button">Follow</div>
+      </div>
+    </div>
+
+    <div class="profiles-section">
+      <div class="profile-container">
+        <div class="profile-info-container">
+          <div class="profile-picture-container">
+            <img class="profile-picture" src="images/cat2.jpg" alt="">
+          </div>
+          <div class="paragraph-container">
+            <p class="profile-name"><strong>Mimi</strong></p>
+            <p class="profile-description">The Sleepy Cat</p>
+            <p class="profile-popularity">Popular</p>
+          </div>
+        </div>
+        <div>
+          <div class="follow-button">Follow</div>
+        </div>
+    </div>  
+
+    <div class="profiles-section">
+      <div class="profile-container">
+        <div class="profile-info-container">
+          <div class="profile-picture-container">
+            <img class="profile-picture" src="images/dog.jpg" alt="">
+          </div>
+          <div class="paragraph-container">
+            <p class="profile-name"><strong>Rex</strong></p>
+            <p class="profile-description">The Happy Dog</p>
+            <p class="profile-popularity">Popular</p>
+          </div>
+        </div>
+        <div>
+          <div class="follow-button">Follow</div>
+        </div>
+    </div>  
+
   </div>
 </body>
 </html>
