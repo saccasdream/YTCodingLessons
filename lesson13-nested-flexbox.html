@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nested Flex-box</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -40,6 +43,7 @@
     height: 100px;
     box-shadow: inset 0 0 10px white;
     width: 300px;
+    margin-bottom: 20px;
   }
   .element1b {
     background-color: lightcoral;
@@ -57,8 +61,85 @@
     color: white;
     background-color: black;
   }
+ 
+
+
+  .container13-d {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  p , a {
+    font-family: Roboto, arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+  .inbox-label {
+    color: lightgrey;
+    font-weight: 600;
+  }
+  .inbox-info-box {
+    display: flex;
+    align-items: center;
+    flex: 70px 1;
+  }
+  .profile-picture-box img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .text-infor{
+    flex: 1;
+  }
+  .name-time-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .profile-name{
+    font-weight: 600;
+  }
+  .profile-last-seen{
+    color: lightgrey;
+  }
+  .truncate-single-line{
+    color: lightgrey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+  }
+
+
+  .tweet-box{
+    display: flex;
+    width: 450px;
+  }
+  .name-handle-box{
+    display: flex;
+    justify-content: start;
+  }
+  .youtube-link-box{
+    display: flex;
+    align-items: center;
+    border: solid 1px lightgrey;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .youtube-vid-thumbnail{
+    background-color: lightgrey;
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+  }
+  .Video-infor-box{
+    flex: 1
+  }
 </style>
-<body>
+<body style="padding-bottom: 1000px;">
   <div class="container13-a">
     <div class="element1"><p>item1</p></div>
     <div class="element2"></div>
@@ -72,6 +153,87 @@
     </div>
   </div>
   
+  <div class="container13-d">
+    <p class="inbox-label">ALL INBOXES</p>
+    <div class="inbox-info-box">
+      <div class="profile-picture-box">
+        <img src="images/cat.jpg" alt="cat">
+      </div>
+      <div class="text-infor">
+        <div class="name-time-box">
+          <p class="profile-name">Chewey Promotions</p>
+          <p class="profile-last-seen">4:58 pm</p>
+        </div>
+        <p><strong>sales of the year&#33;</strong> </p>
+        <p class="truncate-single-line">Hey there&#33; We&#39;re writing to tell you about our exciting new deals this festive season</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container13-d">
+    <p class="inbox-label">ALL INBOXES</p>
+    <div class="inbox-info-box">
+      <div class="profile-picture-box">
+        <img src="images/cat.jpg" alt="cat">
+      </div>
+      <div class="text-infor">
+        <div class="name-time-box">
+          <p class="profile-name">Chewey Promotions</p>
+          <p class="profile-last-seen">4:58 pm</p>
+        </div>
+        <p><strong>sales of the year&#33;</strong> </p>
+        <p class="truncate-single-line">Hey there&#33; We&#39;re writing to tell you about our exciting new deals this festive season</p>
+      </div>
+    </div>
+
+    <div class="inbox-info-box">
+      <div class="profile-picture-box">
+        <img src="images/cat2.jpg" alt="cat">
+      </div>
+      <div class="text-infor">
+        <div class="name-time-box">
+          <p class="profile-name">Best Buy</p>
+          <p class="profile-last-seen">4:58 pm</p>
+        </div>
+        <p><strong>Your Best Buy eReciepts</strong> </p>
+        <p class="truncate-single-line">Thank you for shopping at Best Buy. Here is a token of appreaciation from us</p>
+      </div>
+    </div>
+
+    <div class="inbox-info-box">
+      <div class="profile-picture-box">
+        <img src="images/dog.jpg" alt="cat">
+      </div>
+      <div class="text-infor">
+        <div class="name-time-box">
+          <p class="profile-name">Netflix</p>
+          <p class="profile-last-seen">4:58 pm</p>
+        </div>
+        <p><strong>Here&#39;s whats coming soon on Netflix</strong> </p>
+        <p class="truncate-single-line">Brand new movies and shows, Old favourites also included</p>
+      </div>
+    </div>
+  </div>
   
+
+  <div class="tweet-box">
+    <div class="profile-picture-box">
+      <img src="images/cat.jpg" alt="cat">
+    </div>
+    <div>
+      <div class="name-handle-box">
+        <p><strong>supersimpledev</strong></p>
+        <p>&#64;SuperSimpleDev</p>
+      </div>
+      <p>What is backend web dvelopment?  A complete overview. New Video is up&#33;</p>
+      <div class="youtube-link-box">
+        <div class="youtube-vid-thumbnail"></div>
+        <div class="Video-infor-box">
+          <a>youtube.com</a>
+          <p>Backend web development-a complete overview (2021)</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
