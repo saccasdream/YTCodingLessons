@@ -1,7 +1,9 @@
 body{
   margin: 0;
   padding-top: 80px;
-  padding-left: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(245, 244, 244);
 }
 /* Header styles */
 .header{
@@ -11,7 +13,7 @@ body{
   align-items: center;
   padding: 10px;
   height: 55px;
-  
+  z-index: 100;
   margin-bottom: 20px;
   position: fixed;
   top: 0;
@@ -80,6 +82,7 @@ body{
   align-items: center;
   cursor: pointer;
 }
+
 .search-icon{
   height: 24px;
 }
@@ -100,9 +103,23 @@ body{
   width: 24px;
   cursor: pointer;
 }
+.notifications-icon-box{
+  position: relative;
+}
 .notifications-icon{
   width: 24px;
   cursor: pointer;
+}
+.notifications-count{
+  background-color: red;
+  color: white;
+  padding: 1px 4px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: -2px;
+  right: -2px;
 }
 .profile-picture-small{
   height: 32px;
@@ -121,9 +138,10 @@ body{
   
 }
 .sidebar-tile{
-  
+  height: 76px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 5px;
 }
@@ -135,6 +153,7 @@ body{
 .sidebar-tile img{
   width: 25px;
   padding-top: 5px;
+  margin-bottom: 4px;
 }
 .sidebar-tile p{
   font-size: 10px;
@@ -162,8 +181,21 @@ p{
   grid-template-columns: 40px 1fr;
   margin-bottom: 8px;
 }
+.thumbnail-container{
+  position: relative;
+}
 .thumbnail{
   width: 100%;
+}
+.video-duration-stamp{
+  background-color: black;
+  color: white;
+  font-family: roboto, arial;
+  padding: 2px 5px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
 }
 .channel-picture{
   display: inline-block;
