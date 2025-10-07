@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    h2, p, button{
+      font-family: roboto, arial;
+      margin-top: 0;
+    }
+    header{
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      white-space: nowrap;
+      border-bottom: solid 1px rgb(228, 228, 228);
+      padding: 5px;
+      height: 55px;
+      background-color: white;
+    }
+    .left-section{
+      display: flex;
+      height: 40px;
+      align-items: center;
+      padding: 0;
+    }
+    .left-section img{
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-right: 5px;
+    }
+    h2{
+      margin: 0;
+    }
+    .right-section{
+      display: flex;
+      height: 40px;
+      align-items: center;
+      padding: 0;
+    }
+    .right-section button{
+      background-color: rgb(24, 119, 242);
+      color: white;
+      font-weight: 600;
+      padding: 7px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    .right-section button:active{
+      background-color: lightgrey;
+      color: black;  
+    }
+
+    .sidebar{
+      position: fixed;
+      top: 67px;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      padding: 0;
+    }
+    .sidebar-1{
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      padding: 15px;
+    }
+    .sidebar-1 img{
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+      object-fit: cover;
+      margin-bottom: 10px;
+
+    }
+
+    .sidebar-2{
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+      padding: 10px;
+      background-color: rgb(32, 30, 30);
+    }
+    .sidebar-2-heading{
+      display: flex;
+      align-items: top;
+      justify-content: space-between;
+    }
+    .sidebar-2 p, .sidebar-2 h2{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="left-section">
+      <img src="images/cat.jpg">
+      <h2>Oliver Cat</h2>
+    </div>
+    <div class="right-section">
+      <button>Add Freind</button>
+      <button>Message</button>
+    </div>  
+  </header>
+    
+  <sidebar class="sidebar">
+    <div class="sidebar-1">
+      <img src="images/cat.jpg" alt="">
+      <img src="images/cat2.jpg" alt="">
+      <img src="images/dog.jpg" alt="">
+    </div>
+    <div class="sidebar-2">
+      <div class="sidebar-2-heading">
+        <h2>INFO</h2>
+        <p><strong>&#43;</strong></p>
+      </div>
+      <p># new videos</p>
+      <p># updates</p>
+      <p># faq</p>
+    </div>
+  </sidebar>
+</body>
+</html>
