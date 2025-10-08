@@ -83,10 +83,45 @@ body{
   cursor: pointer;
 }
 
+
 .search-icon{
   height: 24px;
 }
-
+.search-button,
+.mic-button,
+.create-icon-container,
+.notifications-icon-box,
+.apps-icon-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-button .tooltip,
+.mic-button .tooltip,
+.create-icon-container .tooltip,
+.notifications-icon-box .tooltip,
+.apps-icon-container .tooltip{
+  position: absolute;
+  bottom: -35px;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 1s;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: roboto, arial;
+}
+.search-button:hover .tooltip,
+.mic-button:hover .tooltip,
+.create-icon-container:hover .tooltip,
+.notifications-icon-box:hover .tooltip,
+.apps-icon-container:hover .tooltip{
+  opacity: 1;
+}
 
 .left-section{
   width: 180px;
@@ -103,9 +138,7 @@ body{
   width: 24px;
   cursor: pointer;
 }
-.notifications-icon-box{
-  position: relative;
-}
+
 .notifications-icon{
   width: 24px;
   cursor: pointer;
@@ -186,6 +219,7 @@ p{
 }
 .thumbnail{
   width: 100%;
+  margin-bottom: 8px;
 }
 .video-duration-stamp{
   background-color: black;
@@ -201,6 +235,8 @@ p{
   display: inline-block;
   vertical-align: top;
   width: 50px;
+  padding: 5px;
+  margin-right: 5px;
 }
 
 .profile-picture{
