@@ -3,7 +3,8 @@ body{
   padding-top: 80px;
   padding-left: 96px;
   padding-right: 24px;
-  background-color: rgb(245, 244, 244);
+  background-color: rgb(248, 248, 248);
+  font-family: roboto, arial;
 }
 /* Header styles */
 .header{
@@ -20,7 +21,6 @@ body{
   right: 0;
   left: 0;
   background-color: white;
-
   border-bottom: solid 1px rgb(228, 228, 228);
 }
 
@@ -41,20 +41,23 @@ body{
 
 .middle-section{
   flex: 1;
-  margin: 0 30px 0 30px;
   display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin-left: 70px;
+  margin-right: 35px;
 }
 .middle-section input{
   flex: 1;
+  justify-content: space-between;
   align-items: center;
   height: 36px;
   border: solid 1px lightgray;
   border-radius: 2px;
   padding-left: 10px;
   font-size: 16px;
-  font-family: Roboto, arial;
+ 
   box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
-  width: 0px;
 }
 .search-bar::placeholder{
   font-family: Roboto, arial;
@@ -113,7 +116,7 @@ body{
   transition: opacity 1s;
   pointer-events: none;
   white-space: nowrap;
-  font-family: roboto, arial;
+  
 }
 .search-button:hover .tooltip,
 .mic-button:hover .tooltip,
@@ -195,24 +198,41 @@ body{
   padding-bottom: 5px;
 }
 /* Main content styles */
-p{
-  font-family: 'Roboto', sans-serif;
-  margin-top: 0;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-.video-gallery-grid{
-  padding: 20px;
+
+.video-gallery-grid{ /* this is called video-grid in the lesson*/
+  padding: 20px; 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 15px;
   row-gap: 40px;
+  
 }
-.video-info-grid{
+@media (max-width:800px) {
+  .video-gallery-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width:1000px) and (max-width:800px) {
+ .video-gallery-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width:1000px){
+  .video-gallery-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .video-title{
+    font-size: 16px;
+    line-height: 24px;
+    color: red;
+  }
+  body{
+    font-size: 14px;
+    color: red;
+  }
+}
+.video-preview{
   background-color: white;
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  margin-bottom: 8px;
 }
 .thumbnail-container{
   position: relative;
@@ -224,32 +244,72 @@ p{
 .video-duration-stamp{
   background-color: black;
   color: white;
-  font-family: roboto, arial;
-  padding: 2px 5px;
+  padding: 4px 8px;
   border-radius: 2px;
   position: absolute;
-  bottom: 10px;
-  right: 5px;
-}
-.channel-picture{
-  display: inline-block;
-  vertical-align: top;
-  width: 50px;
-  padding: 5px;
-  margin-right: 5px;
+  bottom: 20px;
+  right: 10px;
 }
 
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.channel-picture-box{
+  position: relative;
+  display: flex;
+  
+}
+.channel-picture-box .tooltip{
+  position: absolute;
+  bottom: -45px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px black ;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  opacity: 0;
+  z-index: 50;
+  pointer-events: none;
+  transition: opacity 1s;
+}
+.channel-picture-box .tooltip img{
+width: 60px;
+height: 60px;
+border-radius: 50px;
+object-fit: cover;
+margin-right: 5px;
+}
+.channel-picture-box .tooltip p{
+  margin: 0;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+.channel-picture-box:hover .tooltip{
+  opacity: 1;
+}
 .profile-picture{
   width: 40px;
-  border-radius: 50px;
-  margin-left: 5px;
+  height: 40px;
+  border-radius: 20px;
 }
+video-info{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+
+}
+
 .video-title{
-  margin-left: 10px;
-  margin: 0;
+  margin: 0 0 10px 0px;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+  text-decoration: none;
+  color: black;
 }
 .video-author, .video-stats{
   font-size: 12px;

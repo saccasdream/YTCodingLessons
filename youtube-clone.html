@@ -10,219 +10,355 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
-    <div class="right-section">
-      <img class="menu-icon" src="icons/hamburger-menu.svg" alt="menu-icon">
-      <img class="youtube-logo" src="icons/youtube-logo.svg" alt="youtube-logo">
-    </div>
-    <div class="middle-section">
-      <input class="search-bar" type="text" placeholder="Search">
-      <button class="search-button">
-        <img class="search-icon" src="icons/search.svg" alt="search-icon">
-        <div class="tooltip">Search</div>
-      </button>
-      <button class="mic-button">
-        <img class="mic-icon" src="icons/voice-search-icon.svg" alt="mic-icon">  
-        <div class="tooltip">Search with your voice</div>
-      </button>
-    </div>
-    <div class="left-section">
-      <div class="create-icon-container">
-        <img class="create-icon" src="icons/upload.svg" alt="create-icon">
-        <div class="tooltip">Create</div>
+  <main>
+    <header class="header">
+      <div class="right-section">
+        <img class="menu-icon" src="icons/hamburger-menu.svg" alt="menu-icon">
+        <img class="youtube-logo" src="icons/youtube-logo.svg" alt="youtube-logo">
       </div>
-      <div class="apps-icon-container">
-        <img class="apps-icon" src="icons/youtube-apps.svg" alt="apps-icon">
-        <div class="tooltip">Youtube Apps</div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" alt="search-icon">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="mic-button">
+          <img class="mic-icon" src="icons/voice-search-icon.svg" alt="mic-icon">  
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="left-section">
+        <div class="create-icon-container">
+          <img class="create-icon" src="icons/upload.svg" alt="create-icon">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="apps-icon-container">
+          <img class="apps-icon" src="icons/youtube-apps.svg" alt="apps-icon">
+          <div class="tooltip">Youtube Apps</div>
+        </div>
+        
+        <div class="notifications-icon-box">
+          <img class="notifications-icon" src="icons/notifications.svg" alt="notifications-icon">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="profile-picture-small" src="images/profilepic3.jpeg" alt="profile-picture-small">
+      </div>
+    </header>
+    
+    <nav class="sidebar">
+      <div class="sidebar-tile">
+        <img src="icons/home.svg">
+        <p>Home</p>
+      </div>
+      <div class="sidebar-tile">
+        <img src="icons/explore.svg">
+        <p>Explore</p>
+      </div>
+      <div class="sidebar-tile">
+        <img src="icons/subscriptions.svg">
+        <p>Subscriptions</p>
+      </div>
+      <div class="sidebar-tile">
+        <img src="icons/originals.svg">
+        <p>Originals</p>
+      </div>
+      <div class="sidebar-tile">
+        <img src="icons/youtube-music.svg" >
+        <p>Youtube Music</p>
+      </div>
+      <div class="sidebar-tile">
+        <img src="icons/library.svg">
+        <p>Library</p>
       </div>
       
-      <div class="notifications-icon-box">
-        <img class="notifications-icon" src="icons/notifications.svg" alt="notifications-icon">
-        <div class="notifications-count">3</div>
-        <div class="tooltip">Notifications</div>
-      </div>
-      <img class="profile-picture-small" src="images/profilepic3.jpeg" alt="profile-picture-small">
-    </div>
-  </div>
-  
-  <div class="sidebar">
-    <div class="sidebar-tile">
-      <img src="icons/home.svg">
-      <p>Home</p>
-    </div>
-    <div class="sidebar-tile">
-      <img src="icons/explore.svg">
-      <p>Explore</p>
-    </div>
-    <div class="sidebar-tile">
-      <img src="icons/subscriptions.svg">
-      <p>Subscriptions</p>
-    </div>
-    <div class="sidebar-tile">
-      <img src="icons/originals.svg">
-      <p>Originals</p>
-    </div>
-    <div class="sidebar-tile">
-      <img src="icons/youtube-music.svg" >
-      <p>Youtube Music</p>
-    </div>
-    <div class="sidebar-tile">
-      <img src="icons/library.svg">
-      <p>Library</p>
-    </div>
+    </nav>
     
-  </div>
-  
-  <div class="video-gallery-grid">
-  
+    <section class="video-gallery-grid">
+    
 
-    <div class="video-preview">
-      <div class="thumbnail-container">
-        <img class="thumbnail" src="images/picture2.jpeg" alt="video-image">
-        <div class="video-duration-stamp">4:20</div>
-      </div>
-    
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="images/profilepic1.jpeg" alt="profile-picture">
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+            <img class="thumbnail" src="icons/thumbnail-1.webp" alt="video-image">
+          </a>
+          <div class="video-duration-stamp">4:20</div>
         </div>
-        <div class="video-info">
-          <div>
-            <p class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</p>
-          </div>
-          <div>
-            <p class="video-author">Marques Beowlee</p>
-          </div>
-          <div>
-            <p class="video-stats">1.4M views • 2 days ago</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      
+        <div class="video-info-grid">
 
-    <div class="video-preview">
-      <div class="thumbnail-container">
-        <img class="thumbnail" src="images/picture2.jpeg" alt="video-image">
-        <div class="video-duration-stamp">4:20</div>
-      </div>
+          <div class="channel-picture-box">
+            <a href="https://www.youtube.com/c/mkbhd">
+              <img class="profile-picture" src="icons/channel-1.jpeg" alt="profile-picture">
+            </a>
+            <div class="tooltip">
+              <img src="icons/channel-1.jpeg" alt="profile-picture"> 
+              <div class="tooltips-para">
+                <p>Marques Browlee</p>
+                <p>15M subscribers</p>
+              </div>
+            </div>
     
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="images/profilepic1.jpeg" alt="profile-picture">
-        </div>
-        <div class="video-info">
-          <div>
-            <p class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</p>
           </div>
-          <div>
-            <p class="video-author">Marques Beowlee</p>
-          </div>
-          <div>
-            <p class="video-stats">1.4M views • 2 days ago</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-container">
-        <img class="thumbnail" src="images/picture2.jpeg" alt="video-image">
-        <div class="video-duration-stamp">4:20</div>
-      </div>
-    
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="images/profilepic1.jpeg" alt="profile-picture">
-        </div>
-        <div class="video-info">
-          <div>
-            <p class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</p>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" class="video-title">
+              Talking Tech and AI  withn Google CEO Sunder Pichai
+            </a>
+            <div class="video-author">Marques Browlee</div>
+            <div class="video-stats">1.4M views • 2 days ago</div> 
           </div>
-          <div>
-            <p class="video-author">Marques Beowlee</p>
-          </div>
-          <div>
-            <p class="video-stats">1.4M views • 2 days ago</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="video-preview">
-      <div class="thumbnail-container">
-        <img class="thumbnail" src="images/picture2.jpeg" alt="video-image">
-        <div class="video-duration-stamp">4:20</div>
-      </div>
-    
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="images/profilepic1.jpeg" alt="profile-picture">
-        </div>
-        <div class="video-info">
-          <div>
-            <p class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</p>
-          </div>
-          <div>
-            <p class="video-author">Marques Beowlee</p>
-          </div>
-          <div>
-            <p class="video-stats">1.4M views • 2 days ago</p>
-          </div>
-        </div>
-      </div>
-    </div>    
 
-    <div class="video-preview">
-      <div class="thumbnail-container">
-        <img class="thumbnail" src="images/picture2.jpeg" alt="video-image">
-        <div class="video-duration-stamp">4:20</div>
-      </div>
-    
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="images/profilepic1.jpeg" alt="profile-picture">
-        </div>
-        <div class="video-info">
-          <div>
-            <p class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</p>
-          </div>
-          <div>
-            <p class="video-author">Marques Beowlee</p>
-          </div>
-          <div>
-            <p class="video-stats">1.4M views • 2 days ago</p>
-          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-container">
-        <img class="thumbnail" src="images/picture2.jpeg" alt="video-image">
-        <div class="video-duration-stamp">4:20</div>
-      </div>
-    
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="images/profilepic1.jpeg" alt="profile-picture">
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-2.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
         </div>
-        <div class="video-info">
-          <div>
-            <p class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</p>
+      
+        <div class="video-info-grid">
+
+          <div class="channel-picture-box">
+            <img class="profile-picture" src="icons/channel-2.jpeg" alt="profile-picture">
+            <div class="tooltip">
+              <img src="icons/channel-2.jpeg" alt="profile-picture"> 
+              <div class="tooltips-para">
+                <p>Markiplier</p>
+                <p>20M subscribers</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <p class="video-author">Marques Beowlee</p>
+
+          <div class="video-info">
+            <div class="video-title">Try Not To Laugh Challenge #9</div>
+            <div class="video-author">Markiplier</div>
+            <div class="video-stats">14M views • 4 years ago</div> 
           </div>
-          <div>
-            <p class="video-stats">1.4M views • 2 days ago</p>
-          </div>
+
         </div>
       </div>
-    </div>
 
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-3.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
+        </div>
+      
+        <div class="video-info-grid">
 
-  </div>
-  
+          <div class="channel-picture-box">
+            <img class="profile-picture" src="icons/channel-3.jpeg" alt="profile-picture">
+            <div class="tooltip">
+              <img src="icons/channel-3.jpeg" alt="profile-picture"> 
+              <div class="tooltips-para">
+                <p>SSSniperWolf</p>
+                <p>20M subscribers</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-info">
+            <div class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</div>
+            <div class="video-author">SSSniperWolf</div>
+            <div class="video-stats">12M views • 1 year ago</div> 
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-4.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
+        </div>
+      
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" src="icons/channel-4.jpeg" alt="profile-picture">
+          </div>
+
+          <div class="video-info">
+            <div class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</div>
+            <div class="video-author">Marques Beowlee</div>
+            <div class="video-stats">1.4M views • 2 days ago</div> 
+          </div>
+
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-5.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
+        </div>
+      
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" src="icons/channel-5.jpeg" alt="profile-picture">
+          </div>
+
+          <div class="video-info">
+            <div class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</div>
+            <div class="video-author">Marques Beowlee</div>
+            <div class="video-stats">1.4M views • 2 days ago</div> 
+          </div>
+
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-6.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
+        </div>
+      
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" src="icons/channel-6.jpeg" alt="profile-picture">
+          </div>
+
+          <div class="video-info">
+            <div class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</div>
+            <div class="video-author">Marques Beowlee</div>
+            <div class="video-stats">1.4M views • 2 days ago</div> 
+          </div>
+
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-7.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
+        </div>
+      
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" src="icons/channel-7.jpeg" alt="profile-picture">
+          </div>
+
+          <div class="video-info">
+            <div class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</div>
+            <div class="video-author">Marques Beowlee</div>
+            <div class="video-stats">1.4M views • 2 days ago</div> 
+          </div>
+
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-8.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
+        </div>
+      
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" src="icons/channel-8.jpeg" alt="profile-picture">
+          </div>
+
+          <div class="video-info">
+            <div class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</div>
+            <div class="video-author">Marques Beowlee</div>
+            <div class="video-stats">1.4M views • 2 days ago</div> 
+          </div>
+
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-9.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
+        </div>
+      
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" src="icons/channel-9.jpeg" alt="profile-picture">
+          </div>
+
+          <div class="video-info">
+            <div class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</div>
+            <div class="video-author">Marques Beowlee</div>
+            <div class="video-stats">1.4M views • 2 days ago</div> 
+          </div>
+
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-10.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
+        </div>
+      
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" src="icons/channel-10.jpeg" alt="profile-picture">
+          </div>
+
+          <div class="video-info">
+            <div class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</div>
+            <div class="video-author">Marques Beowlee</div>
+            <div class="video-stats">1.4M views • 2 days ago</div> 
+          </div>
+
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-11.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
+        </div>
+      
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" src="icons/channel-11.jpeg" alt="profile-picture">
+          </div>
+
+          <div class="video-info">
+            <div class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</div>
+            <div class="video-author">Marques Beowlee</div>
+            <div class="video-stats">1.4M views • 2 days ago</div> 
+          </div>
+
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="icons/thumbnail-12.webp" alt="video-image">
+          <div class="video-duration-stamp">4:20</div>
+        </div>
+      
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" src="icons/channel-12.jpeg" alt="profile-picture">
+          </div>
+
+          <div class="video-info">
+            <div class="video-title">Talking Tech and AI  withn Google CEO Sunder Pichai</div>
+            <div class="video-author">Marques Beowlee</div>
+            <div class="video-stats">1.4M views • 2 days ago</div> 
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
   
   
 </body>
